@@ -4796,6 +4796,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^17.2.1":
+  version: 17.2.1
+  resolution: "dotenv@npm:17.2.1"
+  checksum: 2a3842a5451eb64f41cd11bd30d4d9d83941058f952f5e3adc3ca470d381e46ed8acbb0c0e3059da9725df91b42796987fa1deb032fafac992c37b94870ef085
+  languageName: node
+  linkType: hard
+
 "dotenv@npm:^9.0.2":
   version: 9.0.2
   resolution: "dotenv@npm:9.0.2"
@@ -7344,7 +7351,7 @@ __metadata:
     cross-env: ^7.0.3
     debug: ^4.3.4
     dompurify: ^2.4.0
-    dotenv: ^10.0.0
+    dotenv: ^17.2.1
     electron: 14.2.9
     electron-builder: ^23.6.0
     electron-hotkey: 0.0.1-alpha.1
