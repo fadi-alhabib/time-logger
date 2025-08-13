@@ -1,0 +1,76 @@
+.btn {
+    color: $font-color-primary;
+    font-size: $font-size-base;
+    padding: .5em 1.5em;
+    cursor: pointer;
+
+    font-family: $font-family-headings;
+
+    border-radius: .6em;
+    transition: ease .15s;
+    border: 0;
+
+    &:active {
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.btn-primary {
+        background: linear-gradient(180deg, lighten($btn-color-primary, 6%), $btn-color-primary);
+        color: $dark-bg-primary;
+
+        &:hover {
+            background: linear-gradient(180deg, lighten($btn-color-primary, 12%), lighten($btn-color-primary, 4%));
+        }
+
+        &:active {
+            background: darken($btn-color-primary, 15%);
+        }
+    }
+
+    &.btn-secondary {
+        background: linear-gradient(180deg, lighten($btn-color-secondary, 6%), $btn-color-secondary);
+        color: $dark-bg-primary;
+
+        &:hover {
+            background: darken($btn-color-secondary, 10%);
+        }
+
+        &:active {
+            background: darken($btn-color-secondary, 15%);
+        }
+    }
+
+    &.btn-outlined-primary {
+        background: transparent;
+        border: 2px solid rgba($btn-color-primary, .85);
+        color: $btn-color-primary;
+
+        &:hover {
+            background: $btn-color-primary;
+            color: $dark-bg-primary;
+        }
+
+        &:active {
+            border-color: darken($btn-color-primary, 15%);
+        }
+    }
+
+    &.btn-outlined-secondary {
+        background: transparent;
+        border: 2px solid rgba($btn-color-secondary, .85);
+        color: $btn-color-secondary;
+
+        &:hover {
+            background: $btn-color-secondary;
+            color: $dark-bg-primary;
+        }
+
+        &:active {
+            border-color: darken($btn-color-secondary, 15%);
+        }
+    }
+}

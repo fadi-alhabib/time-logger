@@ -1,0 +1,772 @@
+// Dark Theme Overrides for Element UI Components
+
+// Card component
+.el-card {
+    background-color: rgba($bg-color-secondary, 0.9) !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+    
+    .el-card__header {
+        background-color: rgba($bg-color-tertiary, 0.9) !important;
+        border-bottom-color: $border-color-primary !important;
+        color: $font-color-primary !important;
+    }
+    
+    .el-card__body {
+        background-color: rgba($bg-color-secondary, 0.9) !important;
+        color: $font-color-primary !important;
+    }
+}
+
+// Button component
+.el-button {
+    &--primary {
+        background-color: $btn-color-primary !important;
+        border-color: $btn-color-primary !important;
+        color: $dark-bg-primary !important;
+        
+        &:hover, &:focus {
+            background-color: $primary-blue-secondary !important;
+            border-color: $primary-blue-secondary !important;
+        }
+        
+        &:active {
+            background-color: darken($primary-blue-secondary, 10%) !important;
+            border-color: darken($primary-blue-secondary, 10%) !important;
+        }
+    }
+    
+    &--default {
+        background-color: $bg-color-secondary !important;
+        border-color: $border-color-primary !important;
+        color: $font-color-primary !important;
+        
+        &:hover, &:focus {
+            background-color: $bg-color-tertiary !important;
+            border-color: $border-color-secondary !important;
+        }
+    }
+    
+    &--text {
+        color: $btn-color-primary !important;
+        
+        &:hover, &:focus {
+            color: $primary-blue-secondary !important;
+        }
+    }
+}
+
+// Input component
+.el-input {
+    .el-input__inner {
+        background-color: rgba($bg-color-secondary, 0.9) !important;
+        border-color: $border-color-secondary !important;
+        color: $font-color-primary !important;
+        border-width: 2px !important;
+        transition: all 0.3s ease !important;
+        
+        &:hover {
+            border-color: $primary-blue-accent !important;
+            box-shadow: 0 0 0 2px rgba($primary-blue, 0.1) !important;
+        }
+        
+        &:focus {
+            border-color: $btn-color-primary !important;
+            box-shadow: 0 0 0 3px rgba($primary-blue, 0.2) !important;
+            outline: none !important;
+        }
+        
+        &::placeholder {
+            color: $font-color-muted !important;
+            opacity: 0.7 !important;
+        }
+    }
+    
+    .el-input__prefix, .el-input__suffix {
+        color: $font-color-secondary !important;
+    }
+    
+    &.is-disabled .el-input__inner {
+        background-color: $bg-color-tertiary !important;
+        border-color: $border-color-primary !important;
+        color: $dark-text-disabled !important;
+    }
+}
+
+// Textarea component
+.el-textarea {
+    .el-textarea__inner {
+        background-color: rgba($bg-color-secondary, 0.9) !important;
+        border-color: $border-color-secondary !important;
+        color: $font-color-primary !important;
+        border-width: 2px !important;
+        transition: all 0.3s ease !important;
+        
+        &:hover {
+            border-color: $primary-blue-accent !important;
+            box-shadow: 0 0 0 2px rgba($primary-blue, 0.1) !important;
+        }
+        
+        &:focus {
+            border-color: $btn-color-primary !important;
+            box-shadow: 0 0 0 3px rgba($primary-blue, 0.2) !important;
+            outline: none !important;
+        }
+        
+        &::placeholder {
+            color: $font-color-muted !important;
+            opacity: 0.7 !important;
+        }
+    }
+}
+
+// Select component
+.el-select {
+    .el-input__inner {
+        background-color: $bg-color-secondary !important;
+        border-color: $border-color-secondary !important;
+        color: $font-color-primary !important;
+        border-width: 2px !important;
+        transition: all 0.3s ease !important;
+        
+        &:hover {
+            border-color: $primary-blue-accent !important;
+            box-shadow: 0 0 0 2px rgba($primary-blue, 0.1) !important;
+        }
+        
+        &:focus {
+            border-color: $btn-color-primary !important;
+            box-shadow: 0 0 0 3px rgba($primary-blue, 0.2) !important;
+        }
+    }
+}
+
+.el-select-dropdown {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    
+    .el-select-dropdown__item {
+        color: $font-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+        
+        &.selected {
+            background-color: $btn-color-primary !important;
+            color: $dark-bg-primary !important;
+        }
+    }
+}
+
+// Dropdown component
+.el-dropdown-menu {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    
+    .el-dropdown-menu__item {
+        color: $font-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+        
+        &.is-disabled {
+            color: $dark-text-disabled !important;
+        }
+    }
+}
+
+// Menu component
+.el-menu {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    
+    .el-menu-item {
+        color: $font-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+        
+        &.is-active {
+            background-color: $btn-color-primary !important;
+            color: $dark-bg-primary !important;
+        }
+    }
+    
+    .el-submenu__title {
+        color: $font-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+    }
+}
+
+// Table component
+.el-table {
+    background-color: $bg-color-secondary !important;
+    color: $font-color-primary !important;
+    
+    th.el-table__cell {
+        background-color: $bg-color-tertiary !important;
+        color: $font-color-primary !important;
+        border-bottom-color: $border-color-primary !important;
+    }
+    
+    td.el-table__cell {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+        border-bottom-color: $border-color-primary !important;
+    }
+    
+    tr:hover > td.el-table__cell {
+        background-color: $bg-color-tertiary !important;
+    }
+    
+    .el-table__border-line {
+        background-color: $border-color-primary !important;
+    }
+}
+
+// Dialog component
+.el-dialog {
+    background-color: $bg-color-secondary !important;
+    
+    .el-dialog__header {
+        background-color: $bg-color-tertiary !important;
+        border-bottom-color: $border-color-primary !important;
+        
+        .el-dialog__title {
+            color: $font-color-primary !important;
+        }
+    }
+    
+    .el-dialog__body {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+    }
+    
+    .el-dialog__footer {
+        background-color: $bg-color-tertiary !important;
+        border-top-color: $border-color-primary !important;
+    }
+}
+
+// MessageBox (alert/confirm) component
+.el-message-box {
+    background-color: $bg-color-secondary !important;
+    color: $font-color-primary !important;
+    border-color: $border-color-primary !important;
+
+    .el-message-box__header {
+        background-color: $bg-color-tertiary !important;
+        border-bottom: 1px solid $border-color-primary !important;
+
+        .el-message-box__title {
+            color: $font-color-primary !important;
+        }
+
+        .el-message-box__headerbtn .el-message-box__close {
+            color: $font-color-secondary !important;
+
+            &:hover {
+                color: $font-color-primary !important;
+            }
+        }
+    }
+
+    .el-message-box__content {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+
+        .el-message-box__message,
+        .el-message-box__message p {
+            color: $font-color-secondary !important;
+        }
+    }
+
+    .el-message-box__btns {
+        // background-color: $bg-color-tertiary !important;
+        border-top: 1px solid $border-color-primary !important;
+        // background-color: white;
+    }
+}
+
+// Backdrop overlay for dialogs and message boxes
+.v-modal {
+    background-color: rgba($dark-bg-primary, 0.6) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+// Message component
+.el-message {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+    
+    &.el-message--success {
+        border-color: $--color-success !important;
+    }
+    
+    &.el-message--warning {
+        border-color: $--color-warning !important;
+    }
+    
+    &.el-message--error {
+        border-color: $--color-danger !important;
+    }
+    
+    &.el-message--info {
+        border-color: $--color-info !important;
+    }
+}
+
+// Alert component
+.el-alert {
+    background-color: rgba($bg-color-secondary, 0.9) !important;
+    border: 1px solid $border-color-primary !important;
+    color: $font-color-primary !important;
+
+    &.is-light {
+        background-color: rgba($bg-color-secondary, 0.7) !important;
+        border-color: $border-color-secondary !important;
+    }
+
+    .el-alert__icon {
+        color: $font-color-secondary !important;
+    }
+
+    .el-alert__title {
+        color: $font-color-primary !important;
+    }
+
+    .el-alert__description {
+        color: $font-color-secondary !important;
+    }
+}
+
+.el-alert--success {
+    border-color: rgba($--color-success, 0.35) !important;
+
+    .el-alert__icon { color: $--color-success !important; }
+
+    &.is-light {
+        background-color: rgba($--color-success, 0.12) !important;
+        border-color: rgba($--color-success, 0.35) !important;
+    }
+}
+
+.el-alert--warning {
+    border-color: rgba($--color-warning, 0.35) !important;
+
+    .el-alert__icon { color: $--color-warning !important; }
+
+    &.is-light {
+        background-color: rgba($--color-warning, 0.12) !important;
+        border-color: rgba($--color-warning, 0.35) !important;
+    }
+}
+
+.el-alert--error {
+    border-color: rgba($--color-danger, 0.35) !important;
+
+    .el-alert__icon { color: $--color-danger !important; }
+
+    &.is-light {
+        background-color: rgba($--color-danger, 0.12) !important;
+        border-color: rgba($--color-danger, 0.35) !important;
+    }
+}
+
+.el-alert--info {
+    border-color: rgba($--color-info, 0.35) !important;
+
+    .el-alert__icon { color: $--color-info !important; }
+
+    &.is-light {
+        background-color: rgba($--color-info, 0.12) !important;
+        border-color: rgba($--color-info, 0.35) !important;
+    }
+}
+
+// Notification component
+.el-notification {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+    
+    .el-notification__title {
+        color: $font-color-primary !important;
+    }
+    
+    .el-notification__content {
+        color: $font-color-secondary !important;
+    }
+}
+
+// Tooltip component
+.el-tooltip__popper {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+}
+
+// Popover component
+.el-popover {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+}
+
+// Tabs component
+.el-tabs {
+    .el-tabs__header {
+        background-color: $bg-color-secondary !important;
+        border-bottom-color: $border-color-primary !important;
+        
+        .el-tabs__item {
+            color: $font-color-primary !important;
+            
+            &:hover {
+                color: $btn-color-primary !important;
+            }
+            
+            &.is-active {
+                color: $btn-color-primary !important;
+            }
+        }
+        
+        .el-tabs__active-bar {
+            background-color: $btn-color-primary !important;
+        }
+    }
+    
+    .el-tabs__content {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+    }
+}
+
+// Form component
+.el-form {
+    .el-form-item__label {
+        color: $font-color-primary !important;
+    }
+    
+    .el-form-item__content {
+        color: $font-color-primary !important;
+    }
+}
+
+// Checkbox component
+.el-checkbox {
+    .el-checkbox__input {
+        .el-checkbox__inner {
+            background-color: $bg-color-secondary !important;
+            border-color: $border-color-primary !important;
+            
+            &:hover {
+                border-color: $btn-color-primary !important;
+            }
+        }
+        
+        &.is-checked .el-checkbox__inner {
+            background-color: $btn-color-primary !important;
+            border-color: $btn-color-primary !important;
+        }
+    }
+    
+    .el-checkbox__label {
+        color: $font-color-primary !important;
+    }
+}
+
+// Radio component
+.el-radio {
+    .el-radio__input {
+        .el-radio__inner {
+            background-color: $bg-color-secondary !important;
+            border-color: $border-color-primary !important;
+            
+            &:hover {
+                border-color: $btn-color-primary !important;
+            }
+        }
+        
+        &.is-checked .el-radio__inner {
+            background-color: $btn-color-primary !important;
+            border-color: $btn-color-primary !important;
+        }
+    }
+    
+    .el-radio__label {
+        color: $font-color-primary !important;
+    }
+}
+
+// Switch component
+.el-switch {
+    .el-switch__core {
+        background-color: $border-color-primary !important;
+        border-color: $border-color-primary !important;
+        
+        &.is-checked {
+            background-color: $btn-color-primary !important;
+            border-color: $btn-color-primary !important;
+        }
+    }
+}
+
+// Slider component
+.el-slider {
+    .el-slider__runway {
+        background-color: $border-color-primary !important;
+    }
+    
+    .el-slider__bar {
+        background-color: $btn-color-primary !important;
+    }
+    
+    .el-slider__button {
+        background-color: $btn-color-primary !important;
+        border-color: $btn-color-primary !important;
+    }
+}
+
+// Date picker component
+.el-date-picker {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+    
+    .el-date-picker__header {
+        background-color: $bg-color-tertiary !important;
+        border-bottom-color: $border-color-primary !important;
+    }
+    
+    .el-date-table {
+        th {
+            color: $font-color-primary !important;
+        }
+        
+        td {
+            color: $font-color-primary !important;
+            
+            &:hover {
+                background-color: $bg-color-tertiary !important;
+            }
+            
+            &.current {
+                background-color: $btn-color-primary !important;
+                color: $dark-bg-primary !important;
+            }
+        }
+    }
+}
+
+// Time picker component
+.el-time-picker {
+    .el-input__inner {
+        background-color: $bg-color-secondary !important;
+        border-color: $border-color-primary !important;
+        color: $font-color-primary !important;
+    }
+}
+
+.el-time-panel {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    
+    .el-time-spinner__list {
+        color: $font-color-primary !important;
+        
+        li {
+            &:hover {
+                background-color: $bg-color-tertiary !important;
+            }
+            
+            &.active {
+                background-color: $btn-color-primary !important;
+                color: $dark-bg-primary !important;
+            }
+        }
+    }
+}
+
+// Pagination component
+.el-pagination {
+    .el-pagination__total {
+        color: $font-color-primary !important;
+    }
+    
+    .el-pager li {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+        border-color: $border-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+        
+        &.active {
+            background-color: $btn-color-primary !important;
+            color: $dark-bg-primary !important;
+        }
+    }
+    
+    .btn-prev, .btn-next {
+        background-color: $bg-color-secondary !important;
+        color: $font-color-primary !important;
+        border-color: $border-color-primary !important;
+        
+        &:hover {
+            background-color: $bg-color-tertiary !important;
+        }
+    }
+}
+
+// Loading component
+.el-loading-mask {
+    background-color: rgba($dark-bg-primary, 0.8) !important;
+}
+
+.el-loading-spinner {
+    // Hide default spinner elements
+    .circular,
+    i { display: none !important; }
+
+    width: 96px !important;
+    height: 96px !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: center / contain no-repeat url('assets/logo.svg') !important;
+    animation: logoSpin 1.2s linear infinite, logoPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes logoSpin {
+    0%   { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes logoPulse {
+    0%   { opacity: .35; }
+    50%  { opacity: 1; }
+    100% { opacity: .35; }
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg-color-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $border-color-primary;
+    border-radius: 4px;
+    
+    &:hover {
+        background: $border-color-secondary;
+    }
+}
+
+// Custom app-specific dark theme styles
+.app-container {
+    background-color: $bg-color-primary !important;
+    color: $font-color-primary !important;
+}
+
+.sidebar {
+    background-color: $bg-color-secondary !important;
+    border-right-color: $border-color-primary !important;
+}
+
+.main-content {
+    background-color: $bg-color-primary !important;
+}
+
+.task-item, .project-item {
+    background-color: $bg-color-secondary !important;
+    border-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+    
+    &:hover {
+        background-color: $bg-color-tertiary !important;
+    }
+}
+
+.timer-display {
+    background-color: $bg-color-secondary !important;
+    color: $font-color-primary !important;
+    border-color: $border-color-primary !important;
+}
+
+.status-indicator {
+    &.active {
+        background-color: $btn-color-primary !important;
+        color: $dark-bg-primary !important;
+    }
+    
+    &.inactive {
+        background-color: $bg-color-tertiary !important;
+        color: $font-color-secondary !important;
+    }
+}
+
+// Additional component overrides
+.task {
+    background-color: $bg-color-secondary !important;
+    color: $font-color-primary !important;
+    border-bottom-color: $border-color-primary !important;
+}
+
+.tracker {
+    background-color: $bg-color-secondary !important;
+    border-top-color: $border-color-primary !important;
+}
+
+.header {
+    background-color: $bg-color-secondary !important;
+    border-bottom-color: $border-color-primary !important;
+    color: $font-color-primary !important;
+}
+
+.control-bar {
+    background-color: $bg-color-secondary !important;
+    color: $font-color-primary !important;
+}
+
+.app-controls {
+    background-color: $bg-color-secondary !important;
+    border-bottom-color: $border-color-primary !important;
+}
+
+.view {
+    background-color: $bg-color-primary !important;
+}
+
+// Ensure all text elements use proper colors
+h1, h2, h3, h4, h5, h6 {
+    color: $font-color-primary !important;
+}
+
+p {
+    color: $font-color-primary !important;
+}
+
+// Override any remaining white backgrounds
+* {
+    &[style*="background-color: white"],
+    &[style*="background-color: #fff"],
+    &[style*="background-color: #ffffff"] {
+        background-color: $bg-color-secondary !important;
+    }
+} 

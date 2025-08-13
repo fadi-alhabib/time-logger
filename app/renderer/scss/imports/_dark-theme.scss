@@ -1,0 +1,91 @@
+// Dark Theme Variables
+// Navy blue background and light blue primary theme
+
+// Custom color palette for dark theme
+$dark-bg-primary: #152A53;      // Deep navy blue background
+$dark-bg-secondary: #1e3a6b;    // Slightly lighter navy
+$dark-bg-tertiary: #0d2440;     // Darker navy for cards/sections
+$dark-bg-elevated: #2a4a7a;     // Elevated surfaces
+
+// Primary blue colors
+$primary-blue: #3797C6;         // Primary blue color
+$primary-blue-secondary: #2d7ba3; // Slightly darker primary blue
+$primary-blue-accent: #4ba8d4;  // Lighter accent blue
+
+// Text colors for dark theme
+$dark-text-primary: #ffffff;    // White text
+$dark-text-secondary: #b0bec5;  // Light gray text
+$dark-text-muted: #78909c;      // Muted text
+$dark-text-disabled: #546e7a;   // Disabled text
+
+// Border colors
+$dark-border-primary: #37474f;  // Dark borders
+$dark-border-secondary: #455a64; // Lighter borders
+$dark-border-accent: #4fc3f7;   // Accent borders
+
+// Override Element UI variables for dark theme
+$--color-primary: $primary-blue !default;
+$--color-primary-light-1: mix($dark-bg-primary, $primary-blue, 10%) !default;
+$--color-primary-light-2: mix($dark-bg-primary, $primary-blue, 20%) !default;
+$--color-primary-light-3: mix($dark-bg-primary, $primary-blue, 30%) !default;
+$--color-primary-light-4: mix($dark-bg-primary, $primary-blue, 40%) !default;
+$--color-primary-light-5: mix($dark-bg-primary, $primary-blue, 50%) !default;
+$--color-primary-light-6: mix($dark-bg-primary, $primary-blue, 60%) !default;
+$--color-primary-light-7: mix($dark-bg-primary, $primary-blue, 70%) !default;
+$--color-primary-light-8: mix($dark-bg-primary, $primary-blue, 80%) !default;
+$--color-primary-light-9: mix($dark-bg-primary, $primary-blue, 90%) !default;
+
+// Background colors
+$--color-white: $dark-bg-primary !default;
+$--background-color-base: $dark-bg-secondary !default;
+
+// Text colors
+$--color-text-primary: $dark-text-primary !default;
+$--color-text-regular: $dark-text-secondary !default;
+$--color-text-secondary: $dark-text-muted !default;
+$--color-text-placeholder: $dark-text-disabled !default;
+
+// Border colors
+$--border-color-base: $dark-border-primary !default;
+$--border-color-light: $dark-border-secondary !default;
+$--border-color-lighter: $dark-border-primary !default;
+$--border-color-extra-light: $dark-border-secondary !default;
+
+// Fill colors
+$--fill-base: $dark-bg-secondary !default;
+
+// Disabled colors
+$--disabled-fill-base: $dark-bg-tertiary !default;
+$--disabled-color-base: $dark-text-disabled !default;
+$--disabled-border-base: $dark-border-primary !default;
+
+// Icon colors
+$--icon-color: $dark-text-secondary !default;
+$--icon-color-base: $dark-text-muted !default;
+
+// Box shadows for dark theme
+$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.2) !default;
+$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.3) !default;
+$--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.3) !default;
+
+// Custom variables for the app
+$font-color-primary: $dark-text-primary !default;
+$font-color-secondary: $dark-text-secondary !default;
+$font-color-muted: $dark-text-muted !default;
+
+$btn-color-primary: $primary-blue !default;
+$btn-color-secondary: $primary-blue-secondary !default;
+
+$bg-color-primary: $dark-bg-primary !default;
+$bg-color-secondary: $dark-bg-secondary !default;
+$bg-color-tertiary: $dark-bg-tertiary !default;
+$bg-color-elevated: $dark-bg-elevated !default;
+
+$border-color-primary: $dark-border-primary !default;
+$border-color-secondary: $dark-border-secondary !default;
+$border-color-accent: $dark-border-accent !default; 
+
+// Typography
+$font-family-headings: 'Rubik', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default;
+$font-size-base: $--font-size-base !default;

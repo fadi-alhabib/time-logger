@@ -1,0 +1,143 @@
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-left {
+        text-align: left;
+    }
+}
+
+.justify-content {
+    &-left {
+        justify-content: flex-start;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-right {
+        justify-content: flex-end;
+    }
+}
+
+.align-items {
+    &-top {
+        align-items: flex-start;
+    }
+
+    &-center {
+        align-items: center;
+    }
+
+  &-bottom {
+    align-items: flex-end;
+  }
+}
+
+.d {
+    &-flex {
+        display: flex;
+    }
+
+    &-inline-flex {
+        display: inline-flex;
+    }
+}
+
+// Spacing utilities (gap)
+.gap {
+  &-xs { gap: .25rem; }
+  &-sm { gap: .5rem; }
+  &-md { gap: .75rem; }
+  &-lg { gap: 1rem; }
+  &-xl { gap: 1.5rem; }
+}
+
+// Glass surface utility
+.glass {
+  background-color: rgba(21, 42, 83, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.p {
+    &-1 {
+        padding: .5em !important;
+    }
+
+    &-2 {
+        padding: 1em !important;
+    }
+
+    &-3 {
+        padding: 1.5em !important;
+    }
+
+    &-4 {
+        padding: 1.75em !important;
+    }
+
+    &-5 {
+        padding: 2em !important;
+    }
+
+    &t {
+        &-1 {
+            padding-top: .5em !important;
+        }
+
+        &-2 {
+            padding-top: 1em !important;
+        }
+
+        &-3 {
+            padding-top: 1.5em !important;
+        }
+
+        &-4 {
+            padding-top: 1.75em !important;
+        }
+
+        &-5 {
+            padding-top: 2em !important;
+        }
+    }
+}
+
+.underlined {
+    padding-bottom: .5em;
+    border-bottom: 1px solid $border-color-primary;
+}
+
+.label {
+    margin-bottom: .5em;
+}
+
+.text-muted {
+    color: $font-color-muted !important;
+}
+
+.w {
+    &-25 {
+        width: 25%;
+    }
+
+    &-50 {
+        width: 50%;
+    }
+
+    &-75 {
+        width: 75%
+    }
+
+    &-100 {
+        width: 100%;
+    }
+}

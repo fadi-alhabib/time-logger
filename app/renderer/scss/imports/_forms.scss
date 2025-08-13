@@ -1,0 +1,32 @@
+.form-row {
+    display: flex;
+    flex-direction: column;
+
+    .form-input {
+        padding: .8em .8em;
+        font-size: 1em;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        border: 2px solid $border-color-secondary;
+        background: rgba($bg-color-secondary, 0.9);
+        color: $font-color-primary;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: $primary-blue-accent;
+            box-shadow: 0 0 0 2px rgba($primary-blue, 0.1);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $btn-color-primary;
+            box-shadow: 0 0 0 3px rgba($primary-blue, 0.2);
+            background: $bg-color-secondary;
+        }
+
+        &::placeholder {
+            color: $font-color-muted;
+            opacity: 0.7;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    background-color: $bg-color-primary;
+    background-image:
+        radial-gradient(rgba(55, 151, 198, 0.25) 1px, transparent 1px),
+        radial-gradient(rgba(36, 92, 146, 0.25) 1px, transparent 1px);
+    background-size: 30px 30px, 50px 50px;
+    background-position: 0 0, 15px 15px;
+    color: $font-color-primary;
+
+    * {
+        font-family: BlinkMacSystemFont, "Rubik", sans-serif;
+    }
+}
+
+// Global elevation tokens
+.elevated {
+    box-shadow: $--box-shadow-light;
+    border: 1px solid $border-color-primary;
+    border-radius: 10px;
+}
+
+// Smooth transitions
+* {
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}

@@ -1,0 +1,16 @@
+a {
+    color: $font-color-secondary;
+
+    &:hover {
+        color: $btn-color-primary;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: darken($btn-color-primary, 20%);
+    }
+
+    &:visited {
+        color: $font-color-secondary;
+    }
+}
