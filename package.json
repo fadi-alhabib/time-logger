@@ -252,7 +252,7 @@
     "electron-notarize": "^1.2.1",
     "electron-rebuild": "^3.2.9",
     "element-theme-chalk": "^2.15.10",
-    "element-ui": "^2.15.10",
+    "element-ui": "^2.15.14",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",

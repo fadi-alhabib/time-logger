@@ -4967,9 +4967,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"element-ui@npm:^2.15.10":
-  version: 2.15.10
-  resolution: "element-ui@npm:2.15.10"
+"element-ui@npm:^2.15.14":
+  version: 2.15.14
+  resolution: "element-ui@npm:2.15.14"
   dependencies:
     async-validator: ~1.8.1
     babel-helper-vue-jsx-merge-props: ^2.0.0
@@ -4979,7 +4979,7 @@ __metadata:
     throttle-debounce: ^1.0.1
   peerDependencies:
     vue: ^2.5.17
-  checksum: 3e970b59ba97f34958232844b8ed23f373f0c92003c265278312e9170f11491613a3e53740d7e0f7f8c8ef3be875620967171e2adf0907f293dd84611979acc1
+  checksum: 937b211ce3437ce3627fe07a098800805d6c6babc527edfff711dcc160d3c52cbaadd25663d8a03408200d996d7c745afdd60339804537fbf2875554a6edeb2f
   languageName: node
   linkType: hard
 
@@ -7351,7 +7351,7 @@ __metadata:
     electron-notarize: ^1.2.1
     electron-rebuild: ^3.2.9
     element-theme-chalk: ^2.15.10
-    element-ui: ^2.15.10
+    element-ui: ^2.15.14
     eslint: ^7.32.0
     eslint-config-airbnb-base: ^14.2.1
     eslint-plugin-import: ^2.26.0
